@@ -1,0 +1,117 @@
+<!DOCTYPE html>↩
+↩
+<html lang="en">↩
+    <head>↩
+        <meta property="og:title" content="About Me">↩
+        <meta property="og:description" content="Introduction to Knightly.">↩
+        <meta property="og:image" content="profile.jpg">↩
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">↩
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">↩
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>↩
+        <link href="styles.css" rel="stylesheet">↩
+        <title>My Webpage</title>↩
+    </head>↩
+    <body>↩
+        <!-- header背景是个人照片，然后名字和短介绍浮在图片上 -->↩
+        <div class="header">↩
+            <img src="bg.avif" alt="Image">↩
+            <div↩
+                class="text display-4">Kira Kigntly↩
+            </div>↩
+          </div>↩
+↩
+        <div class="title">↩
+            <h2>About Me <span class="badge text-bg-success" >Actress</span></h2>↩
+            <h4> Hello! I’m Keira Knightley. </h4>↩
+        </div>↩
+↩
+        <!-- 个人长介绍 -->↩
+        <div class="intro">↩
+            <p> I’m an actress from England, known for my work in both period dramas and contemporary films. You might recognize me from roles in movies like <strong>Pirates of the Caribbean</strong>, where I played Elizabeth Swann, or <strong>Pride & Prejudice</strong>, where I took on the role of Elizabeth Bennet. I’ve also starred in <strong>Atonement</strong> and <strong>The Imitation Game</strong>. I’ve had the privilege of working with some incredible directors and actors throughout my career, and I’m passionate about storytelling and exploring a range of characters. When I’m not working, I enjoy spending time with my family and engaging in various charitable causes..</p>↩
+        </div>↩
+↩
+        <!-- 展示一些个人hobbies -->↩
+        <div class="hashtag">↩
+            <p> #Skater #Designer #CatLover #INFJ</p>↩
+        </div>↩
+↩
+        <!-- 社交媒体账号展示，每个icon点击跳转 -->↩
+        <div class="SocialMedia">↩
+            <a href="https://www.facebook.com/Keiralovers/">↩
+                <img alt="My Facebook" src="fb.png">↩
+            </a>↩
+            <a href="https://www.instagram.com/keiraknightleyofficiall/?hl=en">↩
+                <img alt="My Facebook" src="ins.png">↩
+            </a>↩
+            <a href="https://x.com/keiracknightley?lang=en&mx=2">↩
+                <img alt="My Facebook" src="x.png">↩
+            </a>↩
+            <a href="https://github.com/Keanu-sudo">↩
+                <img alt="My Github" src="github.png">↩
+            </a>↩
+        </div>↩
+        <hr>↩
+        <div class="spacer"></div>↩
+        <!-- 工作展示，table, 跳转到写过的文章链接 -->↩
+        <div class="workshow">↩
+            <div class="d-flex justify-content-center">↩
+                <div class="card mx-2 d-flex flex-column " style="width: 18rem;">↩
+                    <img src="pirates.png" class="card-img-top card-img-fixed"  alt="...">↩
+                    <div class="card-body d-flex flex-column">↩
+                        <h5 class="card-title">Pirates of the Caribbean</h5>↩
+                        <p class="card-text">An American fantasy supernatural swashbuckler film series produced by Jerry Bruckheimer and based on Walt Disney's theme park attraction of the same name.</p>↩
+                        <a href="https://www.imdb.com/title/tt0325980/" class="btn btn-primary mt-auto" id="blue">IMDb</a>↩
+                    </div>↩
+              </div>↩
+         </div>↩↩
+↩
+              <div class="card mx-2 d-flex flex-column" style="width: 18rem;">↩
+                <img src="Atonement.jpg" class="card-img-top card-img-fixed" alt="...">↩
+                <div class="card-body d-flex flex-column">↩
+                  <h5 class="card-title">Atonement</h5>↩
+                  <p class="card-text">Thirteen-year-old fledgling writer Briony Tallis irrevocably changes the course of several lives when she accuses her older sister's lover of a crime he did not commit.</p>↩
+                  <a href="https://www.imdb.com/title/tt0783233/" class="btn btn-primary mt-auto" style="background-color: green; border-color: green;" id="green" >IMDb</a>↩
+                </div>↩
+              </div>↩
+↩
+              <div class="card mx-2 d-flex flex-column" style="width: 18rem;">↩
+                <img src="pp.png" class="card-img-top card-img-fixed" alt="...">↩
+                <div class="card-body d-flex flex-column">↩
+                  <h5 class="card-title">Pride and Prejudice</h5>↩
+                  <p class="card-text">A 2005 historical romantic drama film directed by Joe Wright, in his feature directorial debut, and based on Jane Austen's 1813 novel.</p>↩
+                  <a href="https://www.imdb.com/title/tt0414387/" class="btn btn-primary mt-auto" style="background-color: rgba(73, 17, 17, 1); border-color: rgba(73, 17, 17, 1);" id="brown">IMDb</a>↩
+                </div>↩
+              </div>↩
+↩
+              <script>↩
+                document.addEventListener('DOMContentLoaded', function() {↩
+                    let workshowDiv = document.querySelector('.workshow');↩
+↩
+                    document.querySelector('#blue').addEventListener('mouseover', function() {↩
+                        workshowDiv.style.backgroundColor = 'rgba(11, 115, 243, 1)'; // Bue with 50% opacity↩
+                    });↩
+↩
+                    document.querySelector('#blue').addEventListener('mouseout', function() {↩
+                        workshowDiv.style.backgroundColor = 'rgba(0, 0, 255, 0)'; // Transparent↩
+                    });↩
+↩
+                    document.querySelector('#green').addEventListener('mouseover', function() {↩
+                        workshowDiv.style.backgroundColor = 'rgba(4, 123, 13, 1)'; // Bue with 50% opacity↩
+                    });↩
+↩
+                    document.querySelector('#green').addEventListener('mouseout', function() {↩
+                        workshowDiv.style.backgroundColor = 'rgba(0, 0, 255, 0)'; // Transparent↩
+                    });↩
+↩
+                    document.querySelector('#brown').addEventListener('mouseover', function() {↩
+                        workshowDiv.style.backgroundColor = 'rgba(73, 17, 17, 1)'; // Bue with 50% opacity↩
+                    });↩
+↩
+                    document.querySelector('#brown').addEventListener('mouseout', function() {↩
+                        workshowDiv.style.backgroundColor = 'rgba(0, 0, 255, 0)'; // Transparent↩
+                    });↩
+                });↩
+            </script>↩
+         </div>↩
+    </body>↩
+</html>
